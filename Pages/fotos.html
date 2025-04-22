@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotos | The Batman</title>
+    <link rel="icon" href="../Midia/Logo.png" type="image/png">
+    <link rel="stylesheet" href="../Styles/styles.css">
+    <link rel="stylesheet" href="../Styles/fotos.css">
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="../Midia/Logo.png" />
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./fotos.html">Fotos</a></li>
+                <li><a href="./aboutme.html">Sobre mim</a></li>
+                <li><a href="./contact.html">Contato</a></li>
+            </ul>
+            <!-- Icone do menu hamburguer -->
+            <div class="hamburguer" id="hamburguer">
+                &#9776;
+            </div>
+        </nav>
+    </header>
+
+    <div class="fotos-container">
+        <div class="bastidores">Bastidores</div>
+        <div class="fotos-bastidores">
+            <div class="fotos foto-1"></div>
+            <div class="fotos foto-2"></div>
+            <div class="fotos foto-3"></div>
+            <div class="fotos foto-4"></div>
+            <div class="fotos foto-5"></div>
+            <div class="fotos foto-6"></div>
+            <div class="fotos foto-7"></div>
+            <div class="fotos foto-8"></div>
+            <div class="fotos foto-9"></div>
+            <div class="fotos foto-10"></div>
+            <div class="fotos foto-11"></div>
+            <div class="fotos foto-12"></div>
+        </div>
+    </div>
+
+    <footer>
+        <img style="object-fit: contain;" id="logo" src="../Midia/Logo.png" />
+        <span>Todos os direitos reservados ©</span>
+        <span>Desenvolvido por: <b class="vegadev">vegadev</b> </span>
+
+        <nav class="footer-navigation">
+            <ul class="footer-list">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./contact.html">Contato</a></li>
+                <li><a href="./fotos.html">Fotos</a></li>
+                <li><a href="./coments.html">Comentários</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburguer');
+        const navLinks = document.querySelector('.nav-links');
+
+        // Função para alternar o menu de navegação
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Função para lidar com o redimensionamento da tela
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                // Fecha o menu de navegação e esconde o ícone do hambúrguer
+                navLinks.classList.remove('active');
+                hamburger.style.visibility = 'hidden';
+            } else {
+                hamburger.style.visibility = 'visible'; // Mostra o ícone do hambúrguer em telas pequenas
+            }
+        });
+
+        // Inicializa a visibilidade do ícone do hambúrguer
+        if (window.innerWidth > 768) {
+            hamburger.style.visibility = 'hidden';
+        } else {
+            hamburger.style.visibility = 'visible';
+        }
+    </script>
+
+</body>
+</html>

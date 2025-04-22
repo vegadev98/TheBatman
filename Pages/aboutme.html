@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mim | The Batman</title>
+    <link rel="icon" href="../Midia/Logo.png" type="image/png">
+    <link rel="stylesheet" href="../Styles/styles.css">
+    <link rel="stylesheet" href="../Styles/aboutme.css">
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="../Midia/Logo.png" />
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./fotos.html">Fotos</a></li>
+                <li><a href="./aboutme.html">Sobre mim</a></li>
+                <li><a href="./contact.html">Contato</a></li>
+            </ul>
+            <!-- Icone do menu hamburguer -->
+            <div class="hamburguer" id="hamburguer">
+                &#9776;
+            </div>
+        </nav>
+    </header>
+
+    <div>
+        <div class="aboutme-image"></div>
+        <div class="aboutme-text">
+            <p>
+                Prezados,
+                Me chamo Douglas da Silva Vega, tenho 26 anos e resido no município do Rio de Janeiro. Desde cedo,
+                sempre fui fascinado por três coisas: Área Militar, Tecnologia e Música. Durante alguns anos de minha
+                vida, eu me dediquei nos estudos para conseguir uma vaga nos concursos militares Alguns, eu consegui ser
+                aprovado mas não recebi o convite para ingressar na corporação (ESPCEX e EsSA). Tendo em vista que já
+                estava com a idade avançada, decidi seguir minha carreira profissional na área da tecnologia. Um dos
+                fatores que me fizeram optar por essa área é a paixão por inovação na intenção de melhorar os processos
+                e a qualidade de vida das pessoas como, também, os desafios inerentes da área da programação.
+            </p>
+            <p>
+                A paixão pela tecnologia, pela solução de problemas e a possibilidade de criação me guiou ao longo dos
+                anos e me motivou a buscar conhecimentos na área de computação. Durante minha trajetória acadêmica,
+                busquei constantemente me atualizar sobre as últimas tendências e desenvolvimentos no setor, e
+                participei de alguns projetos acadêmicos que ampliaram minhas habilidades técnicas e de trabalho em
+                equipe. Embora meu estágio atual não me possibilite desenvolver minhas habilidades na área de
+                programação, de forma autônoma, busco sempre estar aprendendo sobre as linguagens de programação, me
+                colocando em alguns desafios e criando metas pessoais.
+            </p>
+            <p>   
+                Além do meu interesse profissional, eu sou uma pessoa que ama estar entre família e amigos. Nos finais
+                de semana, costumo estar na igreja adorando a Deus e tendo comunhão com meus amigos. Gosto de tocar
+                instrumentos de corda e ministrar louvores na igreja. Nas horas de entretenimento, gosto de jogar jogos
+                online e ir à academia. Por fim, meu objetivo profissional é continuar a evoluir na área de computação,
+                assumindo desafios que me permitam aplicar minhas habilidades, aprender novas tecnologias e colaborar
+                com equipes inovadoras para criar soluções impactantes. Estou ansioso pela minha primeira oportunidade
+                nos projetos de tecnologia.
+            </p>
+            <p>
+                Atenciosamente, <b>Douglas da Silva Vega.</b>
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <img style="object-fit: contain;" id="logo" src="../Midia/Logo.png" />
+        <span>Todos os direitos reservados ©</span>
+        <span>Desenvolvido por: <b class="vegadev">vegadev</b> </span>
+
+        <nav class="footer-navigation">
+            <ul class="footer-list">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./contact.html">Contato</a></li>
+                <li><a href="./fotos.html">Fotos</a></li>
+                <li><a href="./coments.html">Comentários</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburguer');
+        const navLinks = document.querySelector('.nav-links');
+
+        // Função para alternar o menu de navegação
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Função para lidar com o redimensionamento da tela
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                // Fecha o menu de navegação e esconde o ícone do hambúrguer
+                navLinks.classList.remove('active');
+                hamburger.style.visibility = 'hidden';
+            } else {
+                hamburger.style.visibility = 'visible'; // Mostra o ícone do hambúrguer em telas pequenas
+            }
+        });
+
+        // Inicializa a visibilidade do ícone do hambúrguer
+        if (window.innerWidth > 768) {
+            hamburger.style.visibility = 'hidden';
+        } else {
+            hamburger.style.visibility = 'visible';
+        }
+    </script>
+
+</body>
+
+</html>

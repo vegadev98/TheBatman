@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos | The Batman</title>
+    <link rel="icon" href="../Midia/Logo.png" type="image/png">
+    <link rel="stylesheet" href="../Styles/styles.css">
+    <link rel="stylesheet" href="../Styles/contact.css">
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="../Midia/Logo.png" />
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./fotos.html">Fotos</a></li>
+                <li><a href="./aboutme.html">Sobre mim</a></li>
+                <li><a href="./contact.html">Contato</a></li>
+            </ul>
+            <!-- Icone do menu hamburguer -->
+            <div class="hamburguer" id="hamburguer">
+                &#9776;
+            </div>
+        </nav>
+    </header>
+
+    <div class="banner-vegadev"></div>
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2>Douglas Vega</h2>
+            <p><strong>E-mail:</strong> al.vega98@hotmail.com</p>
+            <p><strong>Telefone:</strong> (21) 9 9608-0972</p>
+            <p><strong>GitHub:</strong> @vegadev98</p>
+        </div>
+
+        <div class="contact-form">
+            <h3>Entre em contato</h3>
+            <form action="#" method="post">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Digite sua mensagem" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <img style="object-fit: contain;" id="logo" src="../Midia/Logo.png" />
+        <span>Todos os direitos reservados ©</span>
+        <span>Desenvolvido por: <b class="vegadev">vegadev</b> </span>
+
+        <nav class="footer-navigation">
+            <ul class="footer-list">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./contact.html">Contato</a></li>
+                <li><a href="./fotos.html">Fotos</a></li>
+                <li><a href="./coments.html">Comentários</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburguer');
+        const navLinks = document.querySelector('.nav-links');
+
+        // Função para alternar o menu de navegação
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Função para lidar com o redimensionamento da tela
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                // Fecha o menu de navegação e esconde o ícone do hambúrguer
+                navLinks.classList.remove('active');
+                hamburger.style.visibility = 'hidden';
+            } else {
+                hamburger.style.visibility = 'visible'; // Mostra o ícone do hambúrguer em telas pequenas
+            }
+        });
+
+        // Inicializa a visibilidade do ícone do hambúrguer
+        if (window.innerWidth > 768) {
+            hamburger.style.visibility = 'hidden';
+        } else {
+            hamburger.style.visibility = 'visible';
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+:root {
+    --primary-color: #000;
+    --second-color: #d21617;
+    --third-color: #fff;
+    --fourt-color: #5a5a5a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-size: 20px;
+}
+
+header {
+    background-color: var(--primary-color);
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+nav {
+    width: 60%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    color: var(--third-color);
+}
+
+.navbar .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    /* Coloca os itens à direita */
+    /* margin-left: auto; Garantir que a lista de links esteja à direita */
+    gap: 40px;
+}
+
+
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links li a {
+    color: var(--third-color);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar .nav-links li a:hover {
+    color: var(--second-color);
+    transition: 2s;
+}
+
+.navbar .nav-links.active {
+    display: flex;
+}
+
+/* Ícone do menu hamburguer */
+.hamburguer {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    /* Fixo à direita */
+    right: 20px;
+    /* Alinhado à direita */
+    top: 20px;
+    /* Distância do topo */
+    color: var(--third-color);
+
+}
+
+.hamburguer:hover {
+    color: var(--second-color);
+    transition: 2s;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: var(--third-color);
+    cursor: pointer;
+    font-size: 19px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: var(--third-color);
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vegadev {
+    font-size: 27px;
+    display: flex;
+    justify-content: center;
+}
+
+.vegadev:hover {
+    color: var(--second-color);
+}
+
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--primary-color);
+        position: absolute;
+        top: 90px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    .navbar .nav-links.active {
+        display: flex;
+    }
+
+    .navbar .nav-links li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .hamburguer {
+        display: block;
+        visibility: visible;
+    }
+
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    .hamburguer {
+        display: none;
+        /* Esconde o ícone em telas grandes */
+    }
+
+}

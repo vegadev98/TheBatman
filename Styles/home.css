@@ -1,0 +1,160 @@
+#banner {
+    background-image: url('https://preview.redd.it/6092ltrt8nt71.jpg?width=1080&crop=smart&auto=webp&s=7972389785988218c84437b9249615b1df8dc403');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+#trailer-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trailer {
+    width: 50%;
+}
+
+#sinopse {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.description {
+    color: var(--third-color);
+    font-size: 19px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    width: 70%;
+}
+
+.button {
+    width: 200px;
+    height: 45px;
+    background-color: var(--second-color);
+    color: var(--third-color);
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer; /* Quando o cursor é passado em cima do botão, ele é alterado para a mãozinha */
+    transition: .8s;
+    font-size: 18px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: var(--third-color);
+    color: var(--primary-color);
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: var(--third-color);
+    font-size: 17px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.banner-1 {
+    background-image: url('https://img.odcdn.com.br/cdn-cgi/image/width=1200,height=1200,fit=cover/wp-content/uploads/2022/01/The-Batman.jpg');
+}
+
+.banner-2 {
+    background-image: url('https://preview.redd.it/gy2en1wt3nm81.png?auto=webp&s=9ea2876623dabcc01177951d10e66b35511ed7e2');
+}
+
+.banner-3 {
+    background-image: url('https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/07c53b1e-7aee-477d-8d45-c16c080faa75/new-featurette-for-the-batman-offers-additional-details-on-jeffrey-wrights-jim-gordon.jpg');
+}
+
+
+@media (max-width: 768px) {
+    #banner {
+        background-position: 40%;
+    }
+
+    #trailer-container {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer {
+        width: 100%;
+    }
+
+    #sinopse {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    } 
+
+}

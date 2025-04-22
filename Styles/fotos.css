@@ -1,0 +1,91 @@
+.bastidores {
+    font-family: "Kdam Thmor Pro", sans-serif;
+    color: var(--third-color);
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.fotos-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.fotos-bastidores {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    row-gap: 20px;
+    column-gap: 40px;
+    color: var(--third-color);
+    margin: auto;
+}
+
+.fotos {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: var(--third-color);
+    font-size: 17px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.foto-1 {
+    background-image: url("https://i.pinimg.com/736x/76/ff/54/76ff54ab1dc8ae6421ebe0b21341f5fe.jpg");
+}
+
+.foto-2 {
+    background-image: url("https://ingresso-a.akamaihd.net/b2b/production/uploads/article/image/2789/8d8b0725abdda7843c15816befbe579b.jpg");
+}
+
+.foto-3 {
+    background-image: url("https://deuclick.com.br/wp-content/uploads/2022/03/TheBatman.jpg");
+}
+
+.foto-4 {
+    background-image: url("https://cinepop.com.br/wp-content/uploads/2020/10/batman-4.jpeg");
+}
+
+.foto-5 {
+    background-image: url("https://p2.trrsf.com/image/fget/cf/1200/1600/middle/images.terra.com/2023/04/12/1797866254-the-batman-penguin-pinguim.jpg");
+}
+
+.foto-6 {
+    background-image: url("https://preview.redd.it/109gevo0jh291.jpg?auto=webp&s=337da92a3e3c320904bb2fc67db94d50727a2b45");
+}
+
+.foto-7 {
+    background-image: url("https://preview.redd.it/robert-pattinson-behind-the-scenes-of-the-batman-v0-vle8ow5gulu81.gif?format=png8&s=0c70f7936aea9d03258450219bcca199f44a7e18");
+}
+
+.foto-8 {
+    background-image: url("https://cinepop.com.br/wp-content/uploads/2020/10/the-batman-02.jpeg");
+}
+
+.foto-9 {
+    background-image: url("https://sm.ign.com/ign_br/news/j/james-gunn/james-gunn-explains-why-robert-pattinsons-batman-isnt-part-o_kqw1.jpg");
+}
+
+.foto-10 {
+    background-image: url("https://i0.wp.com/ovicio.com.br/wp-content/uploads/2020/02/20200214-batman-robb.jpg?resize=555%2C555&ssl=1");
+}
+
+.foto-11 {
+    background-image: url("https://t.ctcdn.com.br/bZ3T0SQ_hEkxs7d4iyrcTuYlIJY=/640x360/smart/i575400.png");
+}
+
+.foto-12 {
+    background-image: url("https://www.otaboanense.com.br/wp-content/uploads/2024/09/the_batman_relancamento1.jpg");
+}
